@@ -1,0 +1,119 @@
+
+body{
+  background-image: url(img/pexels-belle-co-847393.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+main{  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 4rem;
+  text-align: center;
+  margin: 0;
+  padding: 2rem;
+  color: #001d24;
+}
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.slide {
+  display: none;
+}
+
+.taille {
+  max-width: 50vw;
+  max-height: 75vh;
+  border-radius: 2%;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.puce-align {
+  text-align: center;
+}
+
+.position {
+  color: #282727;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.button {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(31, 146, 133);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.button:hover {
+  background-color: #001d24;
+}
+
+.animation {
+  animation-name: animation;
+  animation-duration: 1.5s;
+}
+@keyframes animation {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#play {
+  font-family: arial;
+  font-weight: bolder;
+  color: rgb(47, 47, 47) !important;
+  font-size: 14px;
+  text-shadow: 1px 1px 0px #bcbcbc;
+  box-shadow: 1px 1px 1px #BEE2F9;
+  padding: 10px 25px;
+  border-radius: 10px;
+  border: 2px solid #717171;
+  background: #bbb;
+  background: linear-gradient(to top, #c0c0c0, #414141);
+}
+
+#play:hover {
+  color: rgb(47, 47, 47) !important;
+  background: #8f8f8f;
+  background: linear-gradient(to top, #414141, #c0c0c0);
+}

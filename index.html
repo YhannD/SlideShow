@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Animals Slideshow</h1>
+    <main>
+    <!-- <img class="back" src="img/pexels-belle-co-847393.jpg" alt=""> -->
+    <!-- Images avec leurs possitions et puces -->
+    <div class="slideshow-container">
+      <div class="slideshow-container slide timer other animation">
+        <div class="position">1/7</div>
+        <img class="taille" src="img/pexels-pixabay-62289.jpg" />
+      </div>
+      <div class="slideshow-container slide timer other animation">
+        <div class="position">2/7</div>
+        <img class="taille" src="img/pexels-pixabay-162318.jpg" />
+      </div>
+      <div class="slideshow-container slide timer other animation">
+        <div class="position">3/7</div>
+        <img class="taille" src="img/pexels-anna-shvets-4587955 (1).jpg" />
+      </div>
+      <div class="slideshow-container slide timer other animation">
+        <div class="position">4/7</div>
+        <img class="taille" src="img/pexels-anna-shvets-4587959 (1).jpg" />
+      </div>
+      <div class="slideshow-container slide timer other animation">
+        <div class="position">5/7</div>
+        <img class="taille" src="img/pexels-anna-shvets-4588065 (1).jpg" />
+      </div>
+      <div class="slideshow-container slide timer other animation">
+        <div class="position">6/7</div>
+        <img class="taille" src="img/pexels-pixabay-162318.jpg" alt="" />
+      </div>
+      <div class="slideshow-container slide timer other animation">
+        <div class="position">7/7</div>
+        <img class="taille" src="img/pexels-rutpratheep-nilpechr-6447600.jpg" />
+      </div>
+      <a
+        class="prev"
+        class="slideshow-container-button"
+        onclick="plusSlides(-1)"
+        >&LeftAngleBracket;</a
+      >
+      <a class="next" class="slideshow-container-button" onclick="plusSlides(1)"
+        >&RightAngleBracket;</a
+      >
+    </div>
+    <div class="puce-align">
+      <span class="button" onclick="currentSlide(1)"></span>
+      <span class="button" onclick="currentSlide(2)"></span>
+      <span class="button" onclick="currentSlide(3)"></span>
+      <span class="button" onclick="currentSlide(4)"></span>
+      <span class="button" onclick="currentSlide(5)"></span>
+      <span class="button" onclick="currentSlide(6)"></span>
+      <span class="button" onclick="currentSlide(7)"></span>
+    </div>
+  <button id="play">Pause</button>
+    <span><script src="main.js"></script></span>
+  </main>
+  </body>
+</html>
